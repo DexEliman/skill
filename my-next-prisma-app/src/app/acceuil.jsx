@@ -1,4 +1,10 @@
+
 import React from 'react';
+
+import { Button } from "../components/ui/button";
+import Link from 'next/link';
+
+
 
 const HomePage = () => {
   return (
@@ -20,7 +26,10 @@ const HomePage = () => {
           <button className="px-6 py-2 text-white bg-green-600 rounded hover:bg-green-700">Sign IN</button>
         </div>
       </div>
+
     </div>
+
+
   );
 };
 
