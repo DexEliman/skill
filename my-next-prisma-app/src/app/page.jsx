@@ -1,47 +1,27 @@
-import { Button } from "../components/ui/button";
-import Link from 'next/link';
-import '../styles/home.css'; // N'oublie pas d'importer ton CSS
+import React from 'react';
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <>
-      <div className="container">
-        <h1 className="title">
-          <span className="lightBlue">Skill</span>
-          <span className="darkBlue">Lab</span>
-        </h1>
-      </div>
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-white via-gray-200 to-gray-800">
+      <h1 className="text-8xl font-bold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent drop-shadow-lg">SKILLLAB</h1>
+      <p className="mt-6 text-3xl text-gray-700 font-semibold">Empowering users to learn effortlessly.</p>
 
-      <div className="container">
-        <h2 className="greetings">
-          Bienvenue
-        </h2>
-      </div>
+      <div className="mt-8 flex space-x-4">
+        {/* Additional content can be added here */}
 
-      <div className="container">
-        <div>
-          <p className="phrases">Content de te revoir !!!</p>
-          <Link href="/login">
-            <Button className="button">Connexion</Button>
-          </Link>
+        <div className="flex flex-col items-center">
+          <p className="text-lg text-gray-600">Déjà membre? Connecte-toi ici!</p>
+
+          <button className="px-6 py-2 text-white bg-blue-600 rounded hover:bg-blue-700">Log IN</button>
         </div>
+        <div className="flex flex-col items-center">
+          <p className="text-lg text-gray-600">Nouveau ici? Crée un compte maintenant!</p>
 
-        <hr className="ligne" />
-
-        <div>
-          <p className="phrases">C'est ta première fois ? <br /> Inscris-toi !</p>
-          <Link href="/signup">
-            <Button className="button">Inscription</Button>
-          </Link>
+          <button className="px-6 py-2 text-white bg-green-600 rounded hover:bg-green-700">Sign IN</button>
         </div>
       </div>
-
-      <div className="container">
-        <p className="phrases">Tkt ya pas d' Authentification</p>
-        <Link href="/dashboard">
-          <Button className="button">Entre</Button>
-        </Link>
-      </div>
-    </>
+    </div>
   );
-}
+};
+
+export default HomePage;
