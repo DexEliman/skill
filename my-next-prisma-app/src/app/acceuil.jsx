@@ -36,12 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="container">
-        <p className="phrases">Tkt ya pas d' Authentification</p>
-        <Link href="/dashboard">
-          <Button className="button">Entre</Button>
-        </Link>
-      </div>
+
     </>
   );
 }
