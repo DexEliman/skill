@@ -1,6 +1,6 @@
 import { Button } from "../components/ui/button";
 import Link from 'next/link';
-import '../styles/home.css'; // N'oublie pas d'importer ton CSS
+
 
 export default function Home() {
   return (
